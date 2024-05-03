@@ -1,0 +1,89 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif; /* Define la fuente del texto para el cuerpo del documento */
+    margin: 0; /* Establece el margen exterior del cuerpo en 0 */
+    padding: 0; /* Establece el relleno interno del cuerpo en 0 */
+}
+
+/* Estilos para el menú de navegación */
+nav {
+    background-color: #333; /* Establece el color de fondo del elemento de navegación */
+    color: #fff; /* Establece el color del texto dentro del elemento de navegación */
+    padding: 10px; /* Añade relleno alrededor del contenido del elemento de navegación */
+}
+nav ul {
+    list-style-type: none; /* Elimina los estilos de viñetas de las listas dentro del elemento de navegación */
+    margin: 0; /* Establece el margen exterior de las listas dentro del elemento de navegación en 0 */
+    padding: 0; /* Establece el relleno interno de las listas dentro del elemento de navegación en 0 */
+    text-align: center; /* Alinea el texto de las listas dentro del elemento de navegación al centro */
+}
+nav ul li {
+    display: inline; /* Hace que los elementos de lista dentro del elemento de navegación se muestren en línea */
+    margin: 0 10px; /* Establece el margen entre los elementos de lista dentro del elemento de navegación */
+}
+nav ul li a {
+    color: #fff; /* Establece el color del texto de los enlaces dentro del elemento de navegación */
+    text-decoration: none; /* Elimina el subrayado de los enlaces dentro del elemento de navegación */
+}
+
+/* Estilos para el contenido de los productos */
+.container {
+    max-width: 1200px; /* Establece el ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    padding: 20px; /* Añade relleno alrededor del contenido del contenedor */
+}
+.product-wrapper {
+    display: flex; /* Utiliza un modelo de caja flexible para los elementos secundarios */
+    flex-wrap: wrap; /* Permite que los elementos secundarios se envuelvan en múltiples líneas */
+    justify-content: center; /* Alinea los elementos secundarios horizontalmente en el centro */
+}
+.product {
+    width: 250px; /* Establece el ancho de los productos */
+    border: 1px solid #ccc; /* Establece un borde sólido alrededor de los productos */
+    margin: 20px; /* Establece el margen exterior de los productos */
+    padding: 20px; /* Añade relleno alrededor del contenido de los productos */
+}
+
+/* Estilos para el carrito de compras */
+.cart {
+    background-color: #f4f4f4; /* Establece el color de fondo del carrito de compras */
+    padding: 20px; /* Añade relleno alrededor del contenido del carrito de compras */
+    margin-top: 20px; /* Establece el margen superior del carrito de compras */
+}
+.cart h2 {
+    margin-top: 0; /* Establece el margen superior del encabezado del carrito de compras en 0 */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333; /* Establece el color de fondo del pie de página */
+    color: #fff; /* Establece el color del texto dentro del pie de página */
+    text-align: center; /* Alinea el texto dentro del pie de página al centro */
+    padding: 10px; /* Añade relleno alrededor del contenido del pie de página */
+    position: fixed; /* Fija el pie de página en la parte inferior de la ventana del navegador */
+    bottom: 0; /* Establece el pie de página en la parte inferior de la ventana del navegador */
+    width: 100%; /* Establece el ancho del pie de página al 100% del ancho de la ventana del navegador */
+}
+
+/* Media queries para tablets */
+@media (min-width: 768px) {
+    .container {
+        padding: 40px; /* Ajusta el relleno del contenedor en tabletas */
+    }
+    footer {
+        padding: 10px; /* Ajuste de espaciado en tabletas en el pie de página */
+    }
+}
+
+/* Media queries para escritorios */
+@media (min-width: 1024px) {
+    .container {
+        padding: 60px; /* Ajusta el relleno del contenedor en escritorios */
+    }
+    .product {
+        width: 23%; /* Establece el ancho de los productos en escritorios */
+    }
+    footer {
+        padding: 20px; /* Restablece el espaciado en el pie de página en escritorios */
+    }
+}
